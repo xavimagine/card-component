@@ -1,0 +1,75 @@
+/*PALETA DE COLORES PRIMARIOS*/
+/*PALETA DE COLORES NEUTRAL*/
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.componente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+}
+
+.container {
+  height: 500px;
+  width: 700px;
+}
+.container #imagen {
+  border-radius: 2% 0% 0% 2%;
+  -webkit-border-radius: 2% 0% 0% 2%;
+  -moz-border-radius: 2% 0% 0% 2%;
+  -ms-border-radius: 2% 0% 0% 2%;
+  -o-border-radius: 2% 0% 0% 2%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container .card {
+  right: 14px;
+  border-radius: 0% 2% 2% 0%;
+  -webkit-border-radius: 0% 2% 2% 0%;
+  -moz-border-radius: 0% 2% 2% 0%;
+  -ms-border-radius: 0% 2% 2% 0%;
+  -o-border-radius: 0% 2% 2% 0%;
+}
+.container .card #parrafo {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.container .card #cabecera {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.container .card #precio {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.container .card #antiguo {
+  text-decoration: line-through;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.container .card button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  height: 56px;
+}
+.container .card button:hover {
+  background-color: #1A4031;
+}
+
+/*# sourceMappingURL=card-component.css.map */
