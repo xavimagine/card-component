@@ -34,42 +34,99 @@ body {
   -ms-border-radius: 0% 2% 2% 0%;
   -o-border-radius: 0% 2% 2% 0%;
 }
-.container .card #parrafo {
-  font-size: 14px;
+.container .card .derecha {
+  margin-top: 27px;
+}
+.container .card .derecha #articulo {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  letter-spacing: 7px;
+  margin-bottom: 24px;
 }
-.container .card #cabecera {
+.container .card .derecha #cabecera {
   color: hsl(212, 21%, 14%);
   font-family: "Fraunces", serif;
   font-weight: 700;
+  font-size: 32px;
+  margin-right: 90px;
+  margin-bottom: 15px;
 }
-.container .card #precio {
+.container .card .derecha #parrafo {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  margin-right: 101px;
+}
+.container .card .derecha #precio {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 45px;
 }
-.container .card #antiguo {
+.container .card .derecha #antiguo {
   text-decoration: line-through;
   font-size: 18px;
   display: flex;
   align-items: center;
+  margin-top: 21px;
+  color: hsl(228, 12%, 48%);
 }
-.container .card button {
+.container .card .derecha button {
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-  height: 56px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  height: 62px;
+  WIDTH: 100%;
+  border: none;
 }
-.container .card button:hover {
+.container .card .derecha button:hover {
   background-color: #1A4031;
+}
+
+/*CAMBIO DE IMAGEN EN MOVIL*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .componente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+  #conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container #imagen {
+    border-radius: 2% 2% 0% 0%;
+    -webkit-border-radius: 2% 2% 0% 0%;
+    -moz-border-radius: 2% 2% 0% 0%;
+    -ms-border-radius: 2% 2% 0% 0%;
+    -o-border-radius: 2% 2% 0% 0%;
+    content: url(/assests/img/image-product-mobile.jpg);
+  }
+  .container .card {
+    width: 95.5%;
+    right: 0;
+    border-radius: 0% 0% 2% 2%;
+    -webkit-border-radius: 0% 0% 2% 2%;
+    -moz-border-radius: 0% 0% 2% 2%;
+    -ms-border-radius: 0% 0% 2% 2%;
+    -o-border-radius: 0% 0% 2% 2%;
+  }
+  .container .card .derecha button {
+    margin-bottom: 27px;
+  }
+  .container .card #derecha {
+    margin-right: 106px;
+  }
 }
 
 /*# sourceMappingURL=card-component.css.map */
